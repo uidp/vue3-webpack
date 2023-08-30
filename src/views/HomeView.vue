@@ -3,6 +3,10 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
     <DialogTest></DialogTest>
+    <div class="my-20">
+      <h3>Translations Options API</h3>
+      <p><b>$t():</b> {{ $t("hello") }}</p>
+    </div>
   </div>
 </template>
 

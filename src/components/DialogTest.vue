@@ -55,9 +55,18 @@
       </v-card>
     </v-fade-transition>
   </v-sheet>
+  <div class="my-20">
+    <h3>Translations Composition API</h3>
+    <p><b>$t():</b> {{ $t("hello") }}</p>
+    <p><b>t():</b> {{ t("hello") }}</p>
+  </div>
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
 import { mdiCheckCircleOutline } from "@mdi/js";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n(); // use as global scope
+
 const dialog = ref(true);
 </script>
