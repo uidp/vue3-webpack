@@ -1,29 +1,5 @@
-# v3app
+# vue3-webpack
 
-## Project setup
-```
-npm install
-```
+## Notes
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- we need jest 27.x because of compatibility with @vue/cli-plugin-unit-jest
