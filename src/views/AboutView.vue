@@ -41,5 +41,5 @@ const isDialogOpen = ref<boolean>(false);
 const closeDialog = () => {
   isDialogOpen.value = false;
 };
-const actionButtons = ["close"];
+const actionButtons = ["close", "confirm"];
 </script>
