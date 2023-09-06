@@ -23,7 +23,7 @@
             variant="outlined"
             @click="closeDialog"
           >
-            Close
+            {{ buttonTitle }}
           </v-btn>
         </div>
       </v-card-actions>
@@ -32,6 +32,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+
 const props = defineProps({
   isOpen: Boolean,
   size: Number,
@@ -51,6 +53,11 @@ const checkButtons = (buttonName: string): boolean => {
 const closeDialog = (): void => {
   emit("dialog-closed");
 };
+
+const buttonTitle = computed(() => "Close");
+defineExpose({
+  buttonTitle,
+});
 </script>
 
 <style lang="scss" scoped>
