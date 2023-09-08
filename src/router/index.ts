@@ -23,6 +23,12 @@ const routes: Array<RouteRecordRaw> = [
     name: "buttons",
     component: ButtonView,
   },
+
+  {
+    path: "/vuetifylabs",
+    name: "vuetifylabs",
+    component: () => import("../views/VuetifyLabsView.vue"),
+  },
 ];
 
 const router = createRouter({
