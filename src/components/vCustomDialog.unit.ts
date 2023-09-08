@@ -1,5 +1,12 @@
 import CustomDialog from "./vCustomDialog.vue";
 import { mount } from "@vue/test-utils";
+
+jest.mock("vue-i18n", () => ({
+  useI18n: () => ({
+    t: (key: string) => key,
+  }),
+}));
+
 const mockProps = {
   size: 480,
   hasButtons: true,
